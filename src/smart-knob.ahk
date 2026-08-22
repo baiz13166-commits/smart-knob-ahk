@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-; v1.1.1
+; v1.1.2
 ; 外设触发键：F13-F17（无 Ctrl/Alt/Shift，不受 Num Lock 影响）
 ; 常规模式：按下 Ctrl+Alt+Down，按住左转 Win+V，按住右转 Win+D。
 
@@ -111,7 +111,7 @@ HandlePdf(action)
     switch action
     {
         case "Press":
-            Send("^{Down}")
+            Send("^!{Down}")
         case "TurnLeft":
             Send("{WheelUp}")
         case "TurnRight":
